@@ -178,7 +178,7 @@
             }
 
             process {
-                if ($ApiVersion -like '5.*' -and $sr) {
+                if ($ApiVersion -like '5.*') {
                     Write-Warning "The API version '$ApiVersion' may not be compatible with field operations.  Consider using '7.0' or later."
                 }
 
